@@ -1,0 +1,14 @@
+.mcfm-banner {
+    /* display: flex;
+    justify-content: center;
+    margin: 4em auto 0 auto; */
+}
+
+.mcfm-banner-img {
+    /* min-width: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px grey; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

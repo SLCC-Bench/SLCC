@@ -1,0 +1,106 @@
+/* @import url(./bootstrap.css); */
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(./navigation.css);
+@import url(./about.css);
+@import url(./mcfm.css);
+@import url(./contacts.css);
+
+:root {
+    --font--family: Poppins;
+    --font-color--primary: rgba(0,0,0,.9);
+}
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+
+@media screen and (max-width: 900px) {
+    /* Main */
+   .main {
+       margin-top: 100px;
+   }
+
+   /* Navigation */
+   header {
+    position: relative;
+  }
+
+  .nav-logo {
+    all: unset;
+    position: absolute;
+    display: block;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96px;
+    z-index: 1001;
+  }
+
+  .nav-ul{
+    all: unset;
+    display: none;
+  }
+
+  .dropdown-nav-li:checked~.nav-ul {
+    position: absolute;
+    right: -2.7em;
+    top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 3em;
+    min-height: 100%;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .dropdown-nav-li-label {
+    position: absolute;
+    right: -2em;
+    top: 3em;
+    display: flex;
+    margin-right: 1em;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-nav-li-label span,
+  .dropdown-nav-li-label span::after,
+  .dropdown-nav-li-label span::before {
+    display: block;
+    background: black;
+    height: 2px;
+    width: 1.5em;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  .dropdown-nav-li-label span::after,
+  .dropdown-nav-li-label span::before { 
+    content: '';
+    position: absolute;
+  }
+
+  .dropdown-nav-li-label span::before {
+    bottom: 7px;
+  }
+
+  .dropdown-nav-li-label span::after {
+    top: 7px;
+  }
+
+  .mcfm-banner {
+      margin: 0 2em;
+  }
+
+  
+}
